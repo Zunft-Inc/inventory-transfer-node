@@ -1,0 +1,27 @@
+{
+  "name": "inventory-transfer-service",
+  "version": "1.0.0",
+  "description": "Moves stock of a SKU between warehouse locations",
+  "main": "src/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write src eslint.config.js",
+    "format:check": "prettier --check src eslint.config.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^16.5.0",
+    "prettier": "^3.9.9"
+  }
+}
